@@ -13,10 +13,16 @@ function Auth() {
         navigate('/dashboard');
     }
 
+    function handleAuthSwitch(): void {
+        setIsLoggingIn(!isLoggingIn)
+    }
+
     return (
         <div className="h-screen w-screen grid place-items-center">
             <div className="bg-blue-300 w-3/5 h-3/4 flex">
-                {isLoggingIn ? <><LoginContainer handleLogin={handleLogin} /><SignupRedirect /></> : <><LoginRedirect /><SingupContainer /> </>}
+                {isLoggingIn 
+                ? <><LoginContainer handleLogin={handleLogin} /><SignupRedirect handleAuthSwitch={handleAuthSwitch} /></> 
+                : <><LoginRedirect handleAuthSwitch={handleAuthSwitch} /><SingupContainer /> </>}
 
             </div>
         </div>

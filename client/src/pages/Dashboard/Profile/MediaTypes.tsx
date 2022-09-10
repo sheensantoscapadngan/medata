@@ -1,6 +1,6 @@
 function MediaTypes() {
     return (
-        <div className="w-full  bg-green-800 px-10 py-8">
+        <div className="w-full bg-green-800 px-10 py-8">
             <h3 className="mb-2 font-bold">
                 TYPES
             </h3>

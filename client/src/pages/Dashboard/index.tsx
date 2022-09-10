@@ -7,7 +7,7 @@ function Dashboard() {
     return (
         <div className="h-screen w-screen flex">
             <Profile />
-            <div className="h-full w-9/12 flex flex-col">
+            <div className="h-full w-10/12 flex flex-col">
                 <MediaFilter />
                 <div className="flex w-full grow">
                     <MediaList />
